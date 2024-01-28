@@ -2,3 +2,5 @@
 minio_data/**
 db_data/**
 config.env
+
+__pycache__
