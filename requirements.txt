@@ -1,3 +1,10 @@
 mlflow
 pandas
 matplotlib
+psycopg[binary,pool]
+psycopg2-binary
+sqlalchemy
+optuna
+lightgbm
+scikit-learn
+pandas
