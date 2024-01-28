@@ -7,19 +7,17 @@
 
 3. Configure connection credentials
 
-    i. PostgreSQL credentials
-
+    1. PostgreSQL credentials
         1. Ensure the new postgresql instance has a user for the optuna db and a different one for the mlflow db
         2. Create a new database called optuna and another called mlflow (if they don't already exist)
 
-    ii. MinIO credentials
-
+    2. MinIO credentials
         1. create a new access key either using `mc` CLI client or the console terminal (usually found at localhost:9001)
         2. create a new bucket called mlflow
 
-    iii. Update `docker/config.env` with the newly-updated credentials
-    iv. docker-compose down and repeate step `2.`
-    iv. Update connection variables in `create_study.py`
+    3. Update `docker/config.env` with the newly-updated credentials
+    4. docker-compose down and repeate step `2.`
+    5. Update connection variables in `create_study.py`
 
 4. `python -m pip install -r requirements.txt`
 
